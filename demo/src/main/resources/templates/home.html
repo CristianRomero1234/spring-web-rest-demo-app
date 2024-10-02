@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/home.js"></script>
+    </head>
+    <body>
+        <header>
+            <title>Home Page</title>
+        </header>
+
+        <h1>Home Page</h1>
+        <p th:text="${name}"></p>
+        <input type="button" id="myButton" value="Click it!" onclick="changeButton()"/>
+        
+        <input type="text" id="myInputForData" placeholder="Enter a name (i.e. Toston)"/>
+        <input type="button" id="aButton" value="Create a new Record in the DB!" onclick="createNewRecordInDataBase()"/>
+    </body>
+</html>

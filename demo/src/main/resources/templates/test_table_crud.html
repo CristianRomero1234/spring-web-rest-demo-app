@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Operations</title>
+    <script src="js/test_table_crud.js"></script>
+</head>
+<body>
+    <h1>Simple CRUD Operations</h1>
+    
+    <!-- Input group for CRUD operations -->
+    <div id="crud">
+        <!-- Create operation -->
+        <h3>Create</h3>
+        <input type="text" id="createName" placeholder="Enter name to create">
+        <button onclick="createEntry()">Create</button>
+
+        <!-- Read operation -->
+        <h3>Read</h3>
+        <button onclick="readEntries()">Read All</button>
+        <ul id="readList"></ul> <!-- Placeholder to display read results -->
+
+        <!-- Update operation -->
+        <h3>Update</h3>
+        <input type="number" id="updateId" placeholder="Enter ID to update">
+        <input type="text" id="updateName" placeholder="Enter new name">
+        <button onclick="updateEntry()">Update</button>
+
+        <!-- Delete operation -->
+        <h3>Delete</h3>
+        <input type="number" id="deleteId" placeholder="Enter ID to delete">
+        <button onclick="deleteEntry()">Delete</button>
+    </div>
+</body>
+</html>
